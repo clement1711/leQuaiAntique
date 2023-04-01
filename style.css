@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  font-family: "lato";
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+}
+header p {
+  color: #b09e80;
+  position: absolute;
+  font-size: 10px;
+  left: 53%;
+  top: 88%;
+}
+.head {
+  width: 100%;
+  height: 160px;
+  background: #192537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+.presentation {
+  width: 100%;
+  background-image: url(média/présentation.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.reserver {
+  color: #b09e80;
+  background: #192537;
+  border: 1px solid #b09e80;
+  width: 400px;
+  height: 70px;
+  margin-left: auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  position: absolute;
+  bottom: 200px;
+}
+
+.footer {
+  width: 100%;
+  background: #192537;
+}
+
+.nav-bot a {
+  color: #e9e9e9;
+  font-size: 35px;
+  padding: 20px;
+}
+.nav-bot a:hover {
+  color: #b09e80;
+}
+
+.guide {
+  padding: 20px;
+}
+
+.address {
+  color: #e9e9e9;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.horaire {
+  border: 2px solid #b09e80;
+  border-radius: 15px;
+  color: #b09e80;
+}
+h4 {
+  text-decoration: underline;
+}
+
+.news {
+  color: #e9e9e9;
+  border: 2px solid #e9e9e9;
+  border-radius: 30px;
+  padding: 6px;
+  font-size: 30px;
+  text-decoration-line: underline;
+  margin: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .horaire {
+    font-size: 10px;
+  }
+  .news {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    height: 100px;
+  }
+  header p {
+    font-size: 7px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .reserver {
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  .nav-bot a {
+    font-size: 25px;
+    padding: 15px;
+  }
+  .address {
+    display: none;
+  }
+  .guide {
+    display: none;
+  }
+  .presentation {
+    background-image: url(média/présentation2.jpg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bot a {
+    font-size: 20px;
+  }
+  .address {
+    font-size: 15px;
+    display: none;
+  }
+}
