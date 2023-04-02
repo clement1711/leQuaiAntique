@@ -15,14 +15,70 @@
   <body>
     <header>
       <div class="head">
-        <div class="menu">
-          <img
-            src="icones\bouton-de-menu.png"
-            alt="menu"
-            height="35px"
-            width="35px"
-          />
+        <a
+          class="btn"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <div class="menu">
+            <img
+              src="icones\bouton-de-menu.png"
+              alt="menu"
+              height="35px"
+              width="35px"
+            />
+          </div>
+        </a>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="well">
+            <h5>Bienvenue <i>clément corbière</i></h5>
+          </div>
+          <button
+            type="button"
+            class="btn-close close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div class="offcanvas-header">
+            <div class="offcanvas-body">
+              <div>
+                <ul class="nav flex-column nav-bot-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Acceuil</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Réserver</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">La carte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nos menus</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="adress-menu">
+                <p>
+                  Le Quai Antique <br />
+                  44 avenue Pierre Lanfrey <br />
+                  73000 Chambéry
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
         <a href="index.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
@@ -31,7 +87,6 @@
         <p>par Arnaud Michant</p>
       </div>
     </header>
-
     <main>
       <div class="presentation">
         <a href="" class="d-flex justify-content-center">
@@ -97,24 +152,37 @@
           <div
             class="col-12 col-md-6 d-flex justify-content-center justify-content-xl-start"
           >
-            <a href="#"
-              ><img class="icone m-2" src="icones\facebook (1).png" alt=""
+            <a href="https://www.facebook.com/"
+              ><img
+                class="icone m-2"
+                src="icones\facebook (1).png"
+                alt="page Facebook"
             /></a>
-            <a href="#"
-              ><img class="icone m-2" src="icones\instagram.png" alt=""
+            <a href="https://www.instagram.com/"
+              ><img
+                class="icone m-2"
+                src="icones\instagram.png"
+                alt="page Instagram"
             /></a>
-            <a href="#"
-              ><img class="icone m-2" src="icones\tripadvisor.png" alt=""
+            <a href="https://www.tripadvisor.fr/"
+              ><img
+                class="icone m-2"
+                src="icones\tripadvisor.png"
+                alt="page Tripadvisor"
             /></a>
-            <a href="#"
-              ><img class="icone m-2" src="icones\google.png" alt=""
+            <a href="https://www.google.fr/" target="_blank"
+              ><img class="icone m-2" src="icones\google.png" alt="page Google"
             /></a>
           </div>
           <div class="col-12 mb-4"></div>
         </div>
       </div>
     </footer>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
