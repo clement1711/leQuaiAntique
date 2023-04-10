@@ -11,6 +11,12 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -70,7 +76,7 @@
               </div>
               <div class="adress-menu">
                 <p>
-                  Le Quai Antique <br />
+                  <i style="font-family: cinzel">Le Quai Antique</i> <br />
                   44 avenue Pierre Lanfrey <br />
                   73000 Chambéry
                 </p>
@@ -78,7 +84,6 @@
             </div>
           </div>
         </div>
-
         <a href="index.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
@@ -86,9 +91,43 @@
         </a>
         <p>par Arnaud Michant</p>
       </div>
+      <div class="menu02">
+        <p class="btn-menu02">
+          <a
+            class="btn fw-bold"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            style="color: black"
+          >
+            Menu
+          </a>
+        </p>
+        <div>
+          <div class="collapse" id="collapseExample">
+            <div class="mt-5">
+              <nav class="nav flex-column">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Acceuil</a
+                >
+                <a class="nav-link" href="#">Réserver</a>
+                <a class="nav-link" href="#">La carte</a>
+                <a class="nav-link" href="#">Nos menus</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <div class="presentation">
+        <h1 class="titre">
+          BIENVENUE AU RESTAURANT :
+          <strong style="font-family: 'cinzel'">LE QUAI ANTIQUE</strong>
+        </h1>
         <a href="" class="d-flex justify-content-center">
           <div class="reserver">RESERVER MAINTENANT</div>
         </a>
@@ -117,30 +156,30 @@
           </div>
           <div class="address text-center col-2 col-xl-4">
             <p>
-              Le Quai Antique <br />
+              <i style="font-family: cinzel">Le Quai Antique</i> <br />
               44 avenue Pierre Lanfrey <br />
               73000 Chambéry
             </p>
           </div>
           <div class="col horaire m-4">
             <div class="row">
-              <div class="col-12 text-center mt-1">
+              <div class="col-12 text-center mt-1 p-2">
                 <h4>HEURES D'OUVERTURES</h4>
               </div>
-              <div class="col-8">Lundi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8">Mardi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8 mb-1">Mercredi</div>
-              <div class="col-4">Fermé</div>
-              <div class="col-8">Jeudi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8">Vendredi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8 mb-1">Samedi</div>
-              <div class="col-4">19h00-22h00</div>
-              <div class="col-8 mb-1">Dimanche</div>
-              <div class="col-4">12h00-15h00</div>
+              <div class="col-7 col-sm-8">Lundi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8">Mardi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Mercredi</div>
+              <div class="col-5 col-sm-4">Fermé</div>
+              <div class="col-7 col-sm-8">Jeudi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8">Vendredi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Samedi</div>
+              <div class="col-5 col-sm-4">19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Dimanche</div>
+              <div class="col-5 col-sm-4">12h00-15h00</div>
             </div>
           </div>
           <div class="col-12"></div>

@@ -11,6 +11,12 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -70,7 +76,7 @@
               </div>
               <div class="adress-menu">
                 <p>
-                  Le Quai Antique <br />
+                  <i style="font-family: cinzel">Le Quai Antique </i><br />
                   44 avenue Pierre Lanfrey <br />
                   73000 Chambéry
                 </p>
@@ -79,22 +85,376 @@
           </div>
         </div>
 
-        <a href="index.html">
+        <a href="home.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
           </div>
         </a>
         <p>par Arnaud Michant</p>
       </div>
+      <div class="menu02">
+        <p class="btn-menu02">
+          <a
+            class="btn fw-bold"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            style="color: black"
+          >
+            Menu
+          </a>
+        </p>
+        <div>
+          <div class="collapse" id="collapseExample">
+            <div class="mt-5">
+              <nav class="nav flex-column">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Acceuil</a
+                >
+                <a class="nav-link" href="#">Réserver</a>
+                <a class="nav-link" href="#">La carte</a>
+                <a class="nav-link" href="#">Nos menus</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <div class="presentation">
-        <a href="" class="d-flex justify-content-center">
+        <h1 class="titre">
+          BIENVENUE AU RESTAURANT :
+          <strong style="font-family: 'cinzel'">LE QUAI ANTIQUE</strong>
+        </h1>
+        <a href="#" class="d-flex justify-content-center">
           <div class="reserver">RESERVER MAINTENANT</div>
         </a>
       </div>
-      <div class="text">
+      <div class="text p-4 pt-5">
         <h4>L’UN DES MEILLEURS RESTAURANT DE CHAMBERY</h4>
+        <p>
+          Arnaud Michant est un chef passionné des produits et producteurs de la
+          Savoie, ce qui l'a conduit à ouvrir son troisième restaurant dans ce
+          département. Son nouveau restaurant, le Quai Antique, situé à
+          Chambéry, proposera une expérience gastronomique sans artifice, que ce
+          soit pour le déjeuner ou le dîner. Pour le chef Michant, ce restaurant
+          est une promesse d'un voyage dans son univers culinaire.
+        </p>
+      </div>
+      <div class="btn-home-01">
+        <a href="#">
+          <div class="reserver01">RESERVER MAINTENANT</div>
+        </a>
+      </div>
+      <div class="container-fluid text-center photo">
+        <div class="row row-cols-2">
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo01name photoName">Escargots de Bourgogne</h3>
+            <p class="photo01des photoDes">au beurre persillé</p>
+            <img class="photos photo01" src="média\photo01.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo02name photoName">Fondue Savoyarde</h3>
+            <p class="photo02des photoDes">et ses pommes de terre vapeur</p>
+            <img class="photos photo02" src="média\photo02.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo03name photoName">Salade de chèvre chaud</h3>
+            <p class="photo03des photoDes">
+              avec miel, tomate et vinaigre balsamique
+            </p>
+            <img class="photos photo03" src="média\photo03.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo04name photoName">Soupe de courge butternut</h3>
+            <p class="photo04des photoDes">avec crème fraiche et croûtons</p>
+            <img class="photos photo04" src="média\photo04.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo05name photoName">Magret de canard rôti</h3>
+            <p class="photo05des photoDes">
+              avec sauce aux myrtilles et gratin dauphinois
+            </p>
+            <img class="photos photo05" src="média\photo05.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="photo06name photoName">Tarte aux noix</h3>
+            <p class="photo06des photoDes">avec glace au beurre brun</p>
+            <img class="photos photo06" src="média\photo06.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleDark" class="container carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="média\photo01.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="top: 1%; text-shadow: 2px 2px 2px black"
+            >
+              <h5 class="">Escargots de Bourgogne</h5>
+              <p>au beurre persillé</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="média\photo02.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="top: 1%; text-shadow: 2px 2px 2px black"
+            >
+              <h5>Fondue Savoyarde</h5>
+              <p>et ses pommes de terre vapeur</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="média\photo03.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="text-shadow: 2px 2px 2px black"
+            >
+              <h5>Salade de chèvre chaud</h5>
+              <p>avec miel, tomate et vinaigre balsamique</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="média\photo04.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="top: 1%; text-shadow: 2px 2px 2px black"
+            >
+              <h5>Soupe de courge butternut</h5>
+              <p>avec crème fraiche et croûtons</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="média\photo05.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="text-shadow: 2px 2px 2px black"
+            >
+              <h5>Magret de canard rôti</h5>
+              <p>avec sauce aux myrtilles et gratin dauphinois</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="média\photo06.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption"
+              style="text-shadow: 2px 2px 2px black"
+            >
+              <h5>Tarte aux noix</h5>
+              <p>avec glace au beurre brun</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <a href="#" style="text-decoration: none">
+        <div class="btn-carte">
+          <p>NOTRE CARTE</p>
+          <img src="icones\fleche-vers-la droite.png" alt="carte restaurant" />
+        </div>
+      </a>
+      <div class="container my-3 pt-3 alert-info">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center mb-3">
+            <div class="card" style="width: 95%">
+              <img src="média\carte.png" class="card-img-top" alt="..." />
+              <a
+                href="https://www.google.fr/maps/dir/43.5135554,0.8277633/44+Av.+Pierre+Lanfrey,+73000+Chamb%C3%A9ry/@44.4203502,2.1038792,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x478ba8570d3c2623:0x58cf73236a99ce7e!2m2!1d5.9151843!2d45.5695527"
+                target="_blank"
+                ><div class="itineraire">ITINERAIRE</div></a
+              >
+
+              <div class="card-body">
+                <div class="card-text" style="display: flex">
+                  <img
+                    class="img-fluid"
+                    src="icones\pointeur-de-localisation.png"
+                    style="width: 20px; height: 20px"
+                    alt=""
+                  />
+                  <p class="px-3">
+                    <b style="font-family: cinzel">Le Quai Antique</b> <br />
+                    44 avenue Pierre Lanfrey <br />
+                    73000 Chambéry
+                  </p>
+                </div>
+                <div class="card-text" style="display: flex">
+                  <img
+                    src="icones\enveloppe.png"
+                    style="width: 20px; height: 20px"
+                    alt="contact"
+                  />
+                  <p class="px-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Modal"
+                      >Contact</a
+                    >
+                  </p>
+                </div>
+
+                <div
+                  class="modal fade"
+                  id="Modal"
+                  tabindex="-1"
+                  aria-labelledby="ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="ModalLabel">
+                          Nous envoyer un message
+                        </h3>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-email" class="col-form-label"
+                              >Votre e-mail :</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="recipient-email"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label"
+                              >Message:</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="message-text"
+                            ></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Fermer
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Envoyer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text" style="display: flex">
+                  <img
+                    src="icones\velo-de-montagne.png"
+                    style="width: 20px; height: 20px"
+                    alt=""
+                  />
+                  <p class="px-3">Parking à vélo</p>
+                </div>
+                <div class="card-text" style="display: flex">
+                  <img
+                    src="icones\desactive.png"
+                    style="width: 20px; height: 20px"
+                    alt=""
+                  />
+                  <p class="px-3">Accès personnes à mobilité réduite</p>
+                </div>
+                <div class="card-text" style="display: flex">
+                  <img
+                    src="icones\wifi.png"
+                    style="width: 20px; height: 20px"
+                    alt=""
+                  />
+                  <p class="px-3">Wifi gratuit</p>
+                </div>
+                <div class="card-text" style="display: flex">
+                  <img
+                    src="icones\paiement-par-carte-de-credit.png"
+                    style="width: 20px; height: 20px"
+                    alt=""
+                  />
+                  <p class="px-3">
+                    American Express | Carte de débit | Mastercard | Chèque |
+                    Virement | Ticket Restaurant | Cash |visa | Chèque Voyage
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-home-01">
+        <a href="#">
+          <div class="reserver01 reserver02">RESERVER MAINTENANT</div>
+        </a>
       </div>
     </main>
     <footer>
@@ -118,32 +478,32 @@
               </li>
             </ul>
           </div>
-          <div class="address text-center col-2 col-xl-4">
+          <div class="address col-2 col-xl-4">
             <p>
-              Le Quai Antique <br />
+              <em style="font-family: cinzel">Le Quai Antique</em> <br />
               44 avenue Pierre Lanfrey <br />
               73000 Chambéry
             </p>
           </div>
           <div class="col horaire m-4">
             <div class="row">
-              <div class="col-12 text-center mt-1">
+              <div class="col-12 text-center mt-1 p-2">
                 <h4>HEURES D'OUVERTURES</h4>
               </div>
-              <div class="col-8">Lundi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8">Mardi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8 mb-1">Mercredi</div>
-              <div class="col-4">Fermé</div>
-              <div class="col-8">Jeudi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8">Vendredi</div>
-              <div class="col-4">12h00-15h00 <br />19h00-22h00</div>
-              <div class="col-8 mb-1">Samedi</div>
-              <div class="col-4">19h00-22h00</div>
-              <div class="col-8 mb-1">Dimanche</div>
-              <div class="col-4">12h00-15h00</div>
+              <div class="col-7 col-sm-8">Lundi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8">Mardi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Mercredi</div>
+              <div class="col-5 col-sm-4">Fermé</div>
+              <div class="col-7 col-sm-8">Jeudi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8">Vendredi</div>
+              <div class="col-5 col-sm-4">12h00-15h00 <br />19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Samedi</div>
+              <div class="col-5 col-sm-4">19h00-22h00</div>
+              <div class="col-7 col-sm-8 mb-1">Dimanche</div>
+              <div class="col-5 col-sm-4">12h00-15h00</div>
             </div>
           </div>
           <div class="col-12"></div>
