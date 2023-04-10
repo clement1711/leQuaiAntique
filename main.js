@@ -149,3 +149,14 @@ photo06.addEventListener("mouseleave", () => {
   photo06des.style.visibility = "hidden";
   photo06.style.zIndex = "2";
 });
+
+// Gestion de la page reservation
+
+var datePage = document.querySelector(".datePage");
+let heureBtn = document.querySelector(".heureBtn");
+let dateBtn = document.querySelector(".dateBtn");
+let heurePage = document.querySelector(".heurePage");
+
+datePage.addEventListener("mouseenter", () => {
+  datePage.style.transform = "scale(1.2)";
+});
