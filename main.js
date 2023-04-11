@@ -14,6 +14,14 @@ reserver.addEventListener("mouseleave", () => {
   reserver.style.transform = "scale(1)";
 });
 
+menu.addEventListener("mouseenter", () => {
+  menu.style.transform = "scale(1.2)";
+});
+
+menu.addEventListener("mouseleave", () => {
+  menu.style.transform = "scale(1)";
+});
+
 reserver01.addEventListener("mouseenter", () => {
   reserver01.style.transform = "scale(1.2)";
 });
@@ -27,14 +35,6 @@ reserver02.addEventListener("mouseenter", () => {
 
 reserver02.addEventListener("mouseleave", () => {
   reserver02.style.transform = "scale(1)";
-});
-
-menu.addEventListener("mouseenter", () => {
-  menu.style.transform = "scale(1.2)";
-});
-
-menu.addEventListener("mouseleave", () => {
-  menu.style.transform = "scale(1)";
 });
 
 itineraire.addEventListener("mouseenter", () => {
@@ -156,7 +156,3 @@ var datePage = document.querySelector(".datePage");
 let heureBtn = document.querySelector(".heureBtn");
 let dateBtn = document.querySelector(".dateBtn");
 let heurePage = document.querySelector(".heurePage");
-
-datePage.addEventListener("mouseenter", () => {
-  datePage.style.transform = "scale(1.2)";
-});
