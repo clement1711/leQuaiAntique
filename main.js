@@ -1,50 +1,3 @@
-// Gestion des boutons "reserver" et "itineraire"
-
-let reserver = document.querySelector(".reserver");
-let reserver01 = document.querySelector(".reserver01");
-let reserver02 = document.querySelector(".reserver02");
-let menu = document.querySelector(".menu");
-let itineraire = document.querySelector(".itineraire");
-
-reserver.addEventListener("mouseenter", () => {
-  reserver.style.transform = "scale(1.2)";
-});
-
-reserver.addEventListener("mouseleave", () => {
-  reserver.style.transform = "scale(1)";
-});
-
-menu.addEventListener("mouseenter", () => {
-  menu.style.transform = "scale(1.2)";
-});
-
-menu.addEventListener("mouseleave", () => {
-  menu.style.transform = "scale(1)";
-});
-
-reserver01.addEventListener("mouseenter", () => {
-  reserver01.style.transform = "scale(1.2)";
-});
-
-reserver01.addEventListener("mouseleave", () => {
-  reserver01.style.transform = "scale(1)";
-});
-reserver02.addEventListener("mouseenter", () => {
-  reserver02.style.transform = "scale(1.2)";
-});
-
-reserver02.addEventListener("mouseleave", () => {
-  reserver02.style.transform = "scale(1)";
-});
-
-itineraire.addEventListener("mouseenter", () => {
-  itineraire.style.transform = "scale(1.2)";
-});
-
-itineraire.addEventListener("mouseleave", () => {
-  itineraire.style.transform = "scale(1)";
-});
-
 // Gestion des photos page "Home"
 
 let photo01 = document.querySelector(".photo01");
@@ -151,8 +104,3 @@ photo06.addEventListener("mouseleave", () => {
 });
 
 // Gestion de la page reservation
-
-var datePage = document.querySelector(".datePage");
-let heureBtn = document.querySelector(".heureBtn");
-let dateBtn = document.querySelector(".dateBtn");
-let heurePage = document.querySelector(".heurePage");

@@ -28,7 +28,7 @@
           role="button"
           aria-controls="offcanvasExample"
         >
-          <div class="menu">
+          <div class="menu scale">
             <img
               src="icones\bouton-de-menu.png"
               alt="menu"
@@ -59,12 +59,15 @@
               <div>
                 <ul class="nav flex-column nav-bot-menu">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="home.html"
                       >Acceuil</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Réserver</a>
+                    <a class="nav-link" href="reservation.html">Réserver</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">La carte</a>
@@ -84,7 +87,7 @@
             </div>
           </div>
         </div>
-        <a href="index.html">
+        <a href="home.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
           </div>
@@ -92,7 +95,7 @@
         <p>par Arnaud Michant</p>
       </div>
       <div class="menu02">
-        <p class="btn-menu02">
+        <p class="btnMenu02">
           <a
             class="btn fw-bold"
             data-bs-toggle="collapse"
@@ -100,21 +103,24 @@
             role="button"
             aria-expanded="false"
             aria-controls="collapseExample"
-            style="color: black"
+            style="color: black; background: #e9e9e9"
           >
             Menu
           </a>
         </p>
         <div>
-          <div class="collapse bg-black" id="collapseExample">
+          <div class="collapse" id="collapseExample">
             <div class="mt-5">
               <nav class="nav flex-column">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active menuZ"
+                  aria-current="page"
+                  href="home.html"
                   >Acceuil</a
                 >
-                <a class="nav-link" href="#">Réserver</a>
-                <a class="nav-link" href="#">La carte</a>
-                <a class="nav-link" href="#">Nos menus</a>
+                <a class="nav-link menuZ" href="reservation.html">Réserver</a>
+                <a class="nav-link menuZ" href="#">La carte</a>
+                <a class="nav-link menuZ" href="#">Nos menus</a>
               </nav>
             </div>
           </div>
@@ -127,24 +133,34 @@
         <div class="reservation">
           <div>
             <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active dateBtn" aria-current="page" href="#"
+              <li class="nav-item" id="dateBtn">
+                <a class="nav-link btnA active" aria-current="date" href="#"
                   >Date</a
                 >
               </li>
-              <li class="nav-item heureBtn//">
-                <a class="nav-link" href="#">Heure</a>
+              <li class="nav-item" id="heureBtn">
+                <a class="nav-link btnB" href="#">Heure</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Personne</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Confirmer</a>
+              <li class="nav-item" id="personneBtn">
+                <a class="nav-link btnC" href="#">Personne</a>
               </li>
             </ul>
           </div>
-          <div class="datePage"></div>
-          <div class="heurePage//"></div>
+          <div class="datePage">
+            <img
+              src="média\date.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+          </div>
+          <div class="heurePage">
+            <img
+              src="média\heure.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+          </div>
+          <div class="personnePage"></div>
         </div>
       </div>
     </main>
@@ -154,12 +170,12 @@
           <div class="guide col-3 col-xl-4">
             <ul class="nav flex-column nav-bot">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="home.html"
                   >Acceuil</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Réserver</a>
+                <a class="nav-link" href="reservation.html">Réserver</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">La carte</a>
@@ -232,11 +248,12 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="main2.js"></script>
   </body>
 </html>

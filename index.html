@@ -28,7 +28,7 @@
           role="button"
           aria-controls="offcanvasExample"
         >
-          <div class="menu">
+          <div class="menu scale">
             <img
               src="icones\bouton-de-menu.png"
               alt="menu"
@@ -59,7 +59,10 @@
               <div>
                 <ul class="nav flex-column nav-bot-menu">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="home.html"
                       >Acceuil</a
                     >
                   </li>
@@ -84,7 +87,7 @@
             </div>
           </div>
         </div>
-        <a href="index.html">
+        <a href="home.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
           </div>
@@ -92,7 +95,7 @@
         <p>par Arnaud Michant</p>
       </div>
       <div class="menu02">
-        <p class="btn-menu02">
+        <p class="btnMenu02">
           <a
             class="btn fw-bold"
             data-bs-toggle="collapse"
@@ -100,21 +103,45 @@
             role="button"
             aria-expanded="false"
             aria-controls="collapseExample"
-            style="color: black"
+            style="color: black; background: #e9e9e9"
           >
             Menu
+          </a>
+        </p>
+        <p class="btnMenu03">
+          <a
+            class="btn fw-bold"
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            style="color: black; background: #e9e9e9"
+          >
+            <img src="icones\la-personne.png" alt="" class="profil" />
           </a>
         </p>
         <div>
           <div class="collapse" id="collapseExample">
             <div class="mt-5">
               <nav class="nav flex-column">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="home.html"
                   >Acceuil</a
                 >
                 <a class="nav-link" href="#">Réserver</a>
                 <a class="nav-link" href="#">La carte</a>
                 <a class="nav-link" href="#">Nos menus</a>
+              </nav>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample2">
+            <div class="mt-5">
+              <nav class="nav flex-column">
+                <a class="nav-link active" aria-current="page" href=""
+                  >Se connecter</a
+                >
+                <a class="nav-link" href="#">S'enregistrer</a>
+                <a class="nav-link" href="#">Mon profil</a>
               </nav>
             </div>
           </div>
@@ -128,8 +155,8 @@
           BIENVENUE AU RESTAURANT :
           <strong style="font-family: 'cinzel'">LE QUAI ANTIQUE</strong>
         </h1>
-        <a href="" class="d-flex justify-content-center">
-          <div class="reserver">RESERVER MAINTENANT</div>
+        <a href="reservation.html" class="d-flex justify-content-center">
+          <div class="reserver scale">RESERVER MAINTENANT</div>
         </a>
       </div>
     </main>
@@ -139,7 +166,7 @@
           <div class="guide col-3 col-xl-4">
             <ul class="nav flex-column nav-bot">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="home.html"
                   >Acceuil</a
                 >
               </li>
