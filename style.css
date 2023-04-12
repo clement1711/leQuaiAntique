@@ -419,8 +419,36 @@ h4 {
   color: #b09e80;
 }
 
-@media screen and (max-width: 440px) {
-  .menu,
+.laCarte {
+  height: 100%;
+  background: #192537;
+  border: 1px solid #b09e80;
+}
+.laCarte2 {
+  margin-top: 180px;
+}
+.styleCarte {
+  font-size: 14px;
+  color: #e9e9e9;
+}
+.styleCarte2 {
+  font-size: 12px;
+  color: gray;
+  padding-bottom: 4px;
+}
+.styleCarte3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .menu > img {
+    height: 20px;
+    width: 20px;
+  }
+  .close {
+    margin-left: 85%;
+    left: ;
+  }
   .titre {
     display: none;
   }
@@ -438,7 +466,7 @@ h4 {
     width: 100%;
   }
 }
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 420px) {
   .menu02 {
     display: none;
   }
@@ -493,6 +521,7 @@ h4 {
   }
   .presentation {
     background-image: url(média/présentation2.jpg);
+    height: 120vh;
   }
   .btn-home-01 {
     height: 140px;
@@ -530,6 +559,21 @@ h4 {
   }
   .connexion label {
     font-size: 12px;
+  }
+  .styleCarte {
+    font-size: 10px;
+  }
+  .styleCarte2 {
+    font-size: 8px;
+  }
+  .styleCarte3 {
+    font-size: 15px;
+  }
+  .laCarte {
+    height: 90vh;
+  }
+  .laCarte2 {
+    margin-top: 160px;
   }
 }
 
