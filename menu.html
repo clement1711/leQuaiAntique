@@ -21,6 +21,72 @@
   <body>
     <header>
       <div class="head">
+        <a
+          class="btn"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <div class="menu scale">
+            <img
+              src="icones\bouton-de-menu.png"
+              alt="menu"
+              height="35px"
+              width="35px"
+            />
+          </div>
+        </a>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="well">
+            <h5>Bienvenue <i>clément corbière</i></h5>
+          </div>
+          <button
+            type="button"
+            class="btn-close close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div class="offcanvas-header">
+            <div class="offcanvas-body">
+              <div>
+                <ul class="nav flex-column nav-bot-menu">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="home.html"
+                      >Acceuil</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Réserver</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="carte.html">La carte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Nos menus</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="adress-menu">
+                <p>
+                  <i style="font-family: cinzel">Le Quai Antique</i> <br />
+                  44 avenue Pierre Lanfrey <br />
+                  73000 Chambéry
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="home.html">
           <div>
             <img class="logo" src="média\logo le quai antique.png" alt="logo" />
@@ -30,55 +96,56 @@
       </div>
     </header>
     <main>
-      <div class="presentation">
-        <div class="connexion">
-          <h3 class="d-flex justify-content-center mt-2">Connexion</h3>
-          <div>
-            <div class="mb-4 mt-5 mx-4 row">
-              <label for="Email" class="col-md-3 col-4 col-form-label"
-                >Email</label
-              >
-              <div class="col-8">
-                <input
-                  type="email"
-                  class="form-control form-control-sm"
-                  id="Email"
-                  value="email@example.com"
-                />
+      <div class="presentation2 pb-4">
+        <div
+          class="container-fluid pb-4 px-4"
+          style="
+            width: 90%;
+            height: 80%;
+            background: #192537;
+            margin-top: 130px;
+          "
+        >
+          <div class="leMenu">
+            <section class="container">
+              <div class="row pb-5">
+                <div class="col-12 text-center pt-4">
+                  <h2 class="carteTitre">LE QUAI ANTIQUE</h2>
+                </div>
+                <div class="col-12 text-center">
+                  <p class="carteSousTitre">
+                    LA PROMESSE D'UN VOYAGE CULINAIRE
+                  </p>
+                </div>
+                <div class="col-12 carteTitre text-center pt-3">
+                  <h5>-------MENU-------</h5>
+                </div>
+                <div class="col-12 col-md-6 mt-4 menuBox">
+                  <div class="col-12 menuTitre text-center">
+                    <p>Invitation Plaisir à 30 €</p>
+                  </div>
+                  <div class="col-12 menuText"><p>UN MENU 2 PLATS</p></div>
+                  <div class="col-12 menuText" style="color: gray">
+                    <p>Cette formule comprend entrée/plat ou plat/dessert.</p>
+                  </div>
+                  <div class="col-12 menuText">
+                    <p>Valable à déjeuner uniquement</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4 menuBox">
+                  <div class="col-12 menuTitre text-center">
+                    <p>Invitation Gourmande à 40 €</p>
+                  </div>
+                  <div class="col-12 menuText"><p>UN MENU 3 PLATS</p></div>
+                  <div class="col-12 menuText" style="color: gray">
+                    <p>Cette formule comprend entrée, plat et dessert.</p>
+                  </div>
+                  <div class="col-12 menuText">
+                    <p>Valable à déjeuner ou à dîner</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="mb-3 row mx-4">
-              <label for="inputPassword" class="col-4 col-md-3 col-form-label"
-                >Password</label
-              >
-              <div class="col-8">
-                <input
-                  type="password"
-                  class="form-control form-control-sm"
-                  id="inputPassword"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="d-flex justify-content-around pt-4"
-            style="font-size: 10px"
-          >
-            <a href="#">S'inscrire</a>
-            <a href="#">Mot de passe oublié ?</a>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-6 mt-5 connexionBtn scale">
-              <a href="home.html"> connexion</a>
-            </div>
-          </div>
-          <div class="row" style="margin-top: 100px">
-            <a
-              href="home.html"
-              class="d-flex justify-content-center text-decoration-none"
-            >
-              <div class="visiteur scale">VISITEUR</div>
-            </a>
+            </section>
           </div>
         </div>
       </div>
