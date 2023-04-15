@@ -100,35 +100,6 @@ header p {
   align-items: start;
   z-index: 3;
 }
-.datePage {
-  height: 92%;
-  width: 100%;
-  position: absolute;
-  background: #90887b;
-  margin-top: 40px;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heurePage {
-  height: 95%;
-  width: 100%;
-  position: absolute;
-  background: #b09e80;
-  margin-top: 40px;
-  visibility: hidden;
-}
-
-.personnePage {
-  height: 95%;
-  width: 100%;
-  position: absolute;
-  background: #f7f5f3;
-  margin-top: 40px;
-  visibility: hidden;
-}
 
 .btn-home-01 {
   display: flex;
