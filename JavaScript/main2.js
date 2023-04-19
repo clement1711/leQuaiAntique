@@ -166,12 +166,12 @@ cldBoite.addEventListener("click", function () {
 // Gestion de la selection des heures **********************************
 
 // Ajout des Adultes
-
-let nbrMan = 2;
+let nbrAdefaut = 2;
+let nbrMan = nbrAdefaut;
 let downA = document.getElementById("downA");
 let upA = document.getElementById("upA");
 let div = `
-<div class="col-2 pastille d-flex pastMan mx-2 my-3">Adulte</div>`;
+<div class="col-2 pastille d-flex pastMan mx-2 my-3" id="pastA" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Adulte</div>`;
 let test = document.getElementById("parent");
 let nombreA = document.getElementById("nombreA");
 let nombre = (nombreA.textContent = nbrMan);
@@ -187,20 +187,22 @@ const delA = () => {
   nbrMan--;
   let targetDiv = document.getElementById("parent");
   nombreA.textContent = nbrMan;
+  let pastA = document.getElementById("pastA");
+  pastA.remove();
 };
 
 upA.addEventListener("click", addA);
 downA.addEventListener("click", delA);
 
 // Ajout des Enfants
-
-let nbrChil = 0;
+let nbrEdefaut = 0;
+let nbrChil = nbrEdefaut;
 let nombreE = document.getElementById("nombreE");
 let upE = document.getElementById("upE");
 let downE = document.getElementById("downE");
 let nombre2 = (nombreE.textContent = nbrChil);
 let div2 = `
-<div class="col-2 pastille d-flex pastChild mx-2 my-3">Enfant</div>`;
+<div class="col-2 pastille d-flex pastChild mx-2 my-3" id="pastE" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Enfant</div>`;
 
 const addE = () => {
   nbrChil++;
@@ -212,8 +214,8 @@ const addE = () => {
 const delE = () => {
   nbrChil--;
   nombreE.textContent = nbrChil;
-  let targetDiv = document.getElementById("parent");
-  targetDiv.innerHTML.removeChild("div2");
+  let pastE = document.getElementById("pastE");
+  pastE.remove();
 };
 
 upE.addEventListener("click", addE);
@@ -226,10 +228,10 @@ let nbrPlaceTotal = 15 - (nbrMan + nbrChil);
 let nbrPlace = document.getElementById("nbrPlace");
 nbrPlace.innerHTML = nbrPlaceTotal;
 
-if (nbrChil == 0) {
+if (nbrChil == nbrEdefaut) {
   downE.style.visibility = "hidden";
 }
-if (nbrMan == 0) {
+if (nbrMan == nbrAdefaut) {
   downA.style.visibility = "hidden";
 }
 
@@ -257,7 +259,7 @@ upE.addEventListener("click", () => {
 
 downA.addEventListener("click", () => {
   nbrPlace.innerHTML++;
-  if (nbrMan == 0) {
+  if (nbrMan == nbrAdefaut) {
     downA.style.visibility = "hidden";
   }
   if (nbrPlace.innerHTML > 0) {
@@ -268,7 +270,7 @@ downA.addEventListener("click", () => {
 
 downE.addEventListener("click", () => {
   nbrPlace.innerHTML++;
-  if (nbrChil == 0) {
+  if (nbrChil == nbrEdefaut) {
     downE.style.visibility = "hidden";
   }
 
