@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Quai Antique</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/donnePers.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -107,14 +108,81 @@
       </div>
     </header>
     <main>
-      <div class="presentation">
-        <h1 class="titre">
-          BIENVENUE AU RESTAURANT :
-          <strong style="font-family: 'cinzel'">LE QUAI ANTIQUE</strong>
-        </h1>
-        <a href="reservation.html" class="d-flex justify-content-center">
-          <div class="reserver scale">RESERVER MAINTENANT</div>
-        </a>
+      <div class="presentation pb-4">
+        <div class="pb-4 px-4 cadre">
+          <div class="row">
+            <div class="col-12 donneTitre">
+              <h4>Informations Personnelles</h4>
+            </div>
+            <form>
+              <div class="mb-3 row px-3 formDonne">
+                <label for="civility" class="form-label col-5 col-sm-4"
+                  >Civilité</label
+                >
+                <input
+                  type="text"
+                  class="form-check col-7 col-sm-8"
+                  id="civility"
+                  value="Monsieur"
+                />
+              </div>
+              <div class="mb-3 row px-3 formDonne">
+                <label for="lastname" class="form-label col-5 col-sm-4"
+                  >Nom</label
+                >
+                <input
+                  type="text"
+                  class="form-check col-7 col-sm-8"
+                  id="lastname"
+                  value="Clément"
+                />
+              </div>
+              <div class="mb-3 row px-3 formDonne">
+                <label for="firstname" class="form-label col-5 col-sm-4"
+                  >Prénom</label
+                >
+                <input
+                  type="text"
+                  class="form-check col-7 col-sm-8"
+                  id="firstname"
+                  value="Corbière"
+                />
+              </div>
+              <div class="mb-3 row px-3 formDonne">
+                <label
+                  for="exampleInputEmail1"
+                  class="form-label col-5 col-sm-4"
+                  >E-mail</label
+                >
+                <input
+                  type="email"
+                  class="form-check col-7 col-sm-8"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  value="corbiere.clement@hotmail.fr"
+                />
+              </div>
+              <div class="mb-3 row px-3 formDonne">
+                <label for="civility" class="form-label col-5 col-sm-4"
+                  >Convive</label
+                >
+                <input
+                  type="text"
+                  class="form-check col-7 col-sm-8"
+                  id="civility"
+                  value="1 adulte"
+                />
+              </div>
+
+              <div class="d-flex justify-content-around pt-3 btn">
+                <button type="submit" class="btn btnMod scale">Modifier</button>
+                <button type="submit" class="btn btnConf scale">
+                  Confirmer
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <footer>

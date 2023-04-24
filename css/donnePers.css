@@ -1,0 +1,33 @@
+.donneTitre {
+  color: #b09e80;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.donneTitre h4 {
+  font-size: 15px;
+}
+.formDonne {
+  color: #b09e80;
+}
+.btn button,
+.btn button:hover {
+  color: #e9e9e9;
+  border: 1px solid #b09e80;
+}
+.cadre {
+  width: 80%;
+  height: 400px;
+  background: #192537;
+  margin-top: 160px;
+}
+@media screen and (min-width: 768px) {
+  .cadre {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cadre {
+    width: 40%;
+  }
+}
