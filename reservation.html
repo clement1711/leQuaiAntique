@@ -38,6 +38,11 @@
             />
           </div>
         </a>
+        <div>
+          <a href="connexion.html">
+            <img class="profil scale" src="icones\profil.png" alt="connexion" />
+          </a>
+        </div>
 
         <div
           class="offcanvas offcanvas-start"
@@ -202,27 +207,27 @@
             <section>
               <h4 id="titre">DISPONIBILITES</h4>
             </section>
-            <div class="container1 container" id="cont">
-              <div class="matin1 box">12:00</div>
-              <div class="matin2 box">12:15</div>
-              <div class="matin3 box">12:30</div>
-              <div class="matin4 box">12:45</div>
-              <div class="matin5 box">13:00</div>
-              <div class="matin6 box">13:15</div>
-              <div class="matin7 box">13:30</div>
-              <div class="matin8 box">13:45</div>
-              <div class="matin9 box">14:00</div>
+            <div class="container1 container" id="matin">
+              <div class="matin1 box" onclick="boxD()">12:00</div>
+              <div class="matin2 box" onclick="boxD()">12:15</div>
+              <div class="matin3 box" onclick="boxD()">12:30</div>
+              <div class="matin4 box" onclick="boxD()">12:45</div>
+              <div class="matin5 box" onclick="boxD()">13:00</div>
+              <div class="matin6 box" onclick="boxD()">13:15</div>
+              <div class="matin7 box" onclick="boxD()">13:30</div>
+              <div class="matin8 box" onclick="boxD()">13:45</div>
+              <div class="matin9 box" onclick="boxD()">14:00</div>
             </div>
             <div class="container1 container">
-              <div class="soir1 box">19:00</div>
-              <div class="soir2 box">19:15</div>
-              <div class="soir3 box">19:30</div>
-              <div class="soir4 box">19:45</div>
-              <div class="soir5 box">20:00</div>
-              <div class="soir6 box">20:15</div>
-              <div class="soir7 box">20:30</div>
-              <div class="soir8 box">20:45</div>
-              <div class="soir9 box">21:00</div>
+              <div class="soir1 box" onclick="boxD()">19:00</div>
+              <div class="soir2 box" onclick="boxD()">19:15</div>
+              <div class="soir3 box" onclick="boxD()">19:30</div>
+              <div class="soir4 box" onclick="boxD()">19:45</div>
+              <div class="soir5 box" onclick="boxD()">20:00</div>
+              <div class="soir6 box" onclick="boxD()">20:15</div>
+              <div class="soir7 box" onclick="boxD()">20:30</div>
+              <div class="soir8 box" onclick="boxD()">20:45</div>
+              <div class="soir9 box" onclick="boxD()">21:00</div>
             </div>
           </section>
 
@@ -268,9 +273,11 @@
                 </p>
               </div>
               <a
-                href="reservation.html"
+                href="#"
                 style="text-decoration: none"
                 class="d-flex reserver03 justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#Backdrop"
               >
                 <div class="scale">RESERVER</div>
               </a>
@@ -279,7 +286,70 @@
         </div>
       </div>
 
-      <!-- Modal -->
+      <!-- Modal de confirmation -->
+      <div
+        style="margin-top: 120px"
+        class="modal fade modal-dialog-scrollable"
+        id="Backdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="BackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header confirm">
+              <h1 class="modal-title fs-5" id="BackdropLabel">
+                Confirmer votre commande
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body confirm2">
+              <p>Veuillez confirmer votre commande</p>
+              <br />
+              <p>Mr Corbière Clément et Mr Montana Tony,</p>
+              <p class="d-flex">
+                rdv le : &nbsp;
+                <span class="placeRdv"
+                  ><strong id="placeDay"></strong>&nbsp;<strong
+                    id="placeDate"
+                  ></strong
+                ></span>
+              </p>
+              <p class="d-flex">à : &nbsp;<strong id="horaire"></strong></p>
+              <p class="d-flex">
+                avec &nbsp;<strong id="placeE"></strong>&nbsp; enfant(s) &nbsp;
+                et &nbsp;<strong id="placeA"></strong>&nbsp; adulte(s).
+              </p>
+              <p>Merci et bonne apétie dans notre restaurant !</p>
+              <p>Un e-mail de confirmation vous sera envoyé.</p>
+            </div>
+            <div class="modal-footer confirm">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                style="background: #192537; color: #b09e80"
+                type="button"
+                class="btn"
+              >
+                Confirmer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Allergie -->
       <div
         class="modal fade modal-dialog-scrollable"
         id="staticBackdrop"
@@ -294,7 +364,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                Déclarer une Allergies
+                Déclarer une Allergie
               </h1>
               <button
                 type="button"
@@ -441,7 +511,7 @@
               </button>
               <button
                 type="button"
-                class="btn btn-primary"
+                class="btn"
                 style="background: #192537; color: #b09e80"
               >
                 Confirmer

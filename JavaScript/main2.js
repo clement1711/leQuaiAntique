@@ -17,6 +17,10 @@ dateBtn.addEventListener("click", () => {
   btnA.classList.add("active");
   btnB.classList.remove("active");
   btnC.classList.remove("active");
+  upA.style.visibility = "hidden";
+  upE.style.visibility = "hidden";
+  downA.style.visibility = "hidden";
+  downE.style.visibility = "hidden";
 });
 
 heureBtn.addEventListener("click", () => {
@@ -26,6 +30,10 @@ heureBtn.addEventListener("click", () => {
   btnB.classList.add("active");
   btnA.classList.remove("active");
   btnC.classList.remove("active");
+  upA.style.visibility = "hidden";
+  upE.style.visibility = "hidden";
+  downA.style.visibility = "hidden";
+  downE.style.visibility = "hidden";
 });
 
 personneBtn.addEventListener("click", () => {
@@ -35,6 +43,16 @@ personneBtn.addEventListener("click", () => {
   btnC.classList.add("active");
   btnA.classList.remove("active");
   btnB.classList.remove("active");
+  upA.style.visibility = "visible";
+  upE.style.visibility = "visible";
+  downA.style.visibility = "visible";
+  if (nbrMan == 2) {
+    downA.style.visibility = "hidden";
+  }
+  downE.style.visibility = "visible";
+  if (nbrChil == 0) {
+    downE.style.visibility = "hidden";
+  }
 });
 
 // Gestion du calendrier ************************************
@@ -99,6 +117,7 @@ document.getElementById("apres").onclick = function () {
 
 function calendrier(year, month) {
   const monthNb = month + 12 * (year - 2020);
+  console.log(monthNb);
 
   let cld = [{ dayStart: 2, length: 31, year: 2020, month: "janvier" }];
   for (let i = 0; i < monthNb - 1; i++) {
@@ -137,6 +156,7 @@ function calendrier(year, month) {
   }
   for (let i = 0; i < cld[cld.length - 1].length; i++) {
     cases[i + cld[cld.length - 1].dayStart].innerText = i + 1;
+    console.log((cases[i + cld[cld.length - 1].dayStart] = i + 1));
   }
   document.getElementById("cldT").innerText =
     cld[cld.length - 1].month.toLocaleUpperCase() +
@@ -153,17 +173,21 @@ function getFévrierLenght(year) {
 }
 
 let cldBoite = document.getElementById("cldBoite");
+let placeDate = document.getElementById("placeDate");
+let cldT = document.getElementById("cldT");
 
-cldBoite.addEventListener("click", function () {
+cldBoite.addEventListener("click", function (e) {
   heurePage.style.visibility = "visible";
   datePage.style.visibility = "hidden";
   personnePage.style.visibility = "hidden";
   btnB.classList.add("active");
   btnA.classList.remove("active");
   btnC.classList.remove("active");
+  placeDay.innerText = e.target.textContent;
+  placeDate.innerText = cldT.textContent;
 });
 
-// Gestion de la selection des heures **********************************
+// Gestion de la selection des personnes **********************************
 
 // Ajout des Adultes
 let nbrAdefaut = 2;
@@ -181,12 +205,14 @@ const addA = () => {
   let targetDiv = document.getElementById("parent");
   targetDiv.innerHTML += div;
   nombreA.textContent = nbrMan;
+  placeA.textContent = nbrMan;
 };
 
 const delA = () => {
   nbrMan--;
   let targetDiv = document.getElementById("parent");
   nombreA.textContent = nbrMan;
+  placeA.textContent = nbrMan;
   let pastA = document.getElementById("pastA");
   pastA.remove();
 };
@@ -207,6 +233,7 @@ let div2 = `
 const addE = () => {
   nbrChil++;
   nombreE.textContent = nbrChil;
+  placeE.textContent = nbrChil;
   let targetDiv = document.getElementById("parent");
   targetDiv.innerHTML += div2;
 };
@@ -214,6 +241,7 @@ const addE = () => {
 const delE = () => {
   nbrChil--;
   nombreE.textContent = nbrChil;
+  placeE.textContent = nbrChil;
   let pastE = document.getElementById("pastE");
   pastE.remove();
 };
@@ -279,3 +307,30 @@ downE.addEventListener("click", () => {
     upE.style.visibility = "visible";
   }
 });
+
+// Places pour la reservation
+
+let placeA = document.getElementById("placeA");
+let placeE = document.getElementById("placeE");
+let placeDay = document.getElementById("placeDay");
+
+placeA.textContent = nbrMan;
+placeE.textContent = nbrChil;
+
+// Gestion des heures *******************************
+
+let horaire = document.getElementById("horaire");
+let matin1 = document.getElementsByClassName("matin1");
+
+function boxD(e) {
+  personnePage.style.visibility = "visible";
+  heurePage.style.visibility = "hidden";
+  datePage.style.visibility = "hidden";
+  upA.style.visibility = "visible";
+  upE.style.visibility = "visible";
+  downA.style.visibility = "visible";
+  downE.style.visibility = "visible";
+  btnC.classList.add("active");
+  btnA.classList.remove("active");
+  btnB.classList.remove("active");
+}

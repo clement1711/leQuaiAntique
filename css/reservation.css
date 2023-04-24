@@ -20,7 +20,7 @@
   margin-top: 40px;
 }
 .datePage {
-  visibility: visible;
+  visibility: hidden;
 }
 .heurePage {
   visibility: hidden;
@@ -28,7 +28,7 @@
 }
 
 .personnePage {
-  visibility: hidden;
+  visibility: visible;
   background-color: #192537;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .reserver03 {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 /* Habillage du calendrier */
@@ -279,10 +279,38 @@
 }
 #nbrPlace {
   margin-left: 20px;
+}
+
+/* confirmation*/
+
+.confirm {
+  color: #b09e80;
+}
+.confirm2 {
+  color: #e9e9e9;
+}
+.confirm,
+.confirm2 {
+  background-color: #192537;
+}
+
+#placeE,
+#placeA,
+#nbrPlace {
   height: 20px;
   width: 30px;
   background-color: #e9e9e9;
   color: black;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placeRdv {
+  color: black;
+  height: 30px;
+  width: 70%;
+  background: #e9e9e9;
   font-weight: 700;
   display: flex;
   justify-content: center;
