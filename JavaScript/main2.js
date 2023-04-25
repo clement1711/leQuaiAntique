@@ -196,7 +196,6 @@ let downA = document.getElementById("downA");
 let upA = document.getElementById("upA");
 let div = `
 <div class="col-2 pastille d-flex pastMan mx-2 my-3" id="pastA" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Adulte</div>`;
-let test = document.getElementById("parent");
 let nombreA = document.getElementById("nombreA");
 let nombre = (nombreA.textContent = nbrMan);
 

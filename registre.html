@@ -6,6 +6,7 @@
     <title>Le Quai Antique</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/donnePers.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -108,23 +109,35 @@
       </div>
     </header>
     <main>
-      <div class="presentation pb-4">
-        <div class="pb-4 px-4 cadre cadre1">
+      <div class="presentation pb-4 d-flex align-items-center">
+        <div class="cadre cadre2 pb-4 px-4">
           <div class="row">
-            <div class="col-12 donneTitre">
-              <h4>Informations Personnelles</h4>
+            <div class="cool-12 donneTitre">
+              <h4>Création de votre compte client</h4>
             </div>
             <form>
               <div class="mb-3 row px-3 formDonne">
-                <label for="civility" class="form-label col-5 col-sm-4"
-                  >Civilité</label
-                >
-                <input
-                  type="text"
-                  class="form-check col-7 col-sm-8"
-                  id="civility"
-                  value="Monsieur"
-                />
+                <label for="civility" class="form-label col-4">Civilité</label>
+                <div class="form-check form-check-inline col">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="Madame"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Mme</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="Monsieur"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">Mr</label>
+                </div>
               </div>
               <div class="mb-3 row px-3 formDonne">
                 <label for="lastname" class="form-label col-5 col-sm-4"
@@ -134,7 +147,7 @@
                   type="text"
                   class="form-check col-7 col-sm-8"
                   id="lastname"
-                  value="Clément"
+                  value=""
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
@@ -145,7 +158,7 @@
                   type="text"
                   class="form-check col-7 col-sm-8"
                   id="firstname"
-                  value="Corbière"
+                  value=""
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
@@ -159,23 +172,47 @@
                   class="form-check col-7 col-sm-8"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  value="corbiere.clement@hotmail.fr"
+                  value=""
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
-                <label for="civility" class="form-label col-5 col-sm-4"
-                  >Convive</label
+                <label for="exampleInputEmail1" class="form-label col"
+                  >Allergie</label
                 >
-                <input
-                  type="text"
-                  class="form-check col-7 col-sm-8"
-                  id="civility"
-                  value="1 adulte"
-                />
+                <div
+                  class="col"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  <a class="allergie">cliquez ici</a>
+                </div>
               </div>
-
-              <div class="d-flex justify-content-around pt-3 btn">
-                <button type="submit" class="btn btnMod scale">Modifier</button>
+              <div class="col mb-3 row px-3 formDonne">
+                <label for="allergie" class="form-label col"
+                  >Convive <br />(4 max)</label
+                >
+                <section class="mb-4 col">
+                  <section class="convive">
+                    <div class="upDown" id="downA">-</div>
+                    <div class="pastMan">Adulte</div>
+                    <div class="upDown" id="upA">+</div>
+                  </section>
+                  <section class="convive">
+                    <div class="upDown" id="downE">-</div>
+                    <div class="pastChild">Enfant</div>
+                    <div class="upDown" id="upE">+</div>
+                  </section>
+                </section>
+                <div class="row d-flex justify-content-start" id="parent"></div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <p style="color: #e9e9e9">
+                  <strong>Total:</strong> &nbsp;<span id="nombreA"></span>&nbsp;
+                  Adulte(s) et &nbsp;<span id="nombreE"></span>&nbsp; Enfant(s)
+                </p>
+              </div>
+              <div class="d-flex justify-content-around btn">
+                <button type="submit" class="btn btnMod scale">Annuler</button>
                 <button type="submit" class="btn btnConf scale">
                   Confirmer
                 </button>
@@ -185,6 +222,177 @@
         </div>
       </div>
     </main>
+    <!-- Modal Allergie -->
+    <div
+      class="modal fade modal-dialog-scrollable"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+      style="margin-top: 120px"
+    >
+      <div class="modal-dialog" style="background: #e9e9e9">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Déclarer une Allergie
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Choisissez parmi ces allergènes que vous souhaitez retirer de nos
+              menus :
+            </p>
+            <form action="get">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="gluten"
+                />
+                <label class="form-check-label" for="gluten">
+                  Céréales contenant du gluten
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="crustace"
+                />
+                <label class="form-check-label" for="crustace">
+                  Produits à base de crustacés
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="oeufs"
+                />
+                <label class="form-check-label" for="oeufs">
+                  Produits à base d'oeufs
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="arachides"
+                />
+                <label class="form-check-label" for="arachides">
+                  Produits à base d'arachides
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="poisson"
+                />
+                <label class="form-check-label" for="poisson">
+                  Produits à base de poissons
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="soja"
+                />
+                <label class="form-check-label" for="soja">
+                  Produits à base de soja
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="lait"
+                />
+                <label class="form-check-label" for="lait">
+                  Produits à base de lait
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="fruitCoque"
+                />
+                <label class="form-check-label" for="fruitCoque">
+                  Fruits à coques
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="sesame"
+                />
+                <label class="form-check-label" for="sesame">
+                  Graines de sésame
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="sulfite"
+                />
+                <label class="form-check-label" for="sulfite">
+                  Anyhdride sulfureux et sulfites
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="autre"
+                />
+                <label class="form-check-label" for="autre"> Autres: </label>
+                <input type="text" class="" id="autre2" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn"
+              style="background: #192537; color: #b09e80"
+            >
+              Confirmer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer container-fluid">
         <div class="row">
@@ -274,6 +482,6 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="JavaScript\registre.js"></script>
   </body>
 </html>
