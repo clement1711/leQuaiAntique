@@ -6,7 +6,7 @@ let nbrMan = 0;
 let downA = document.getElementById("downA");
 let upA = document.getElementById("upA");
 let div = `
-<div class="col-2 pastille d-flex pastMan mx-2 " id="pastA" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Adulte</div>`;
+<div class="col-2 pastille d-flex pastMan mx-2 " id="pastA">Adulte</div>`;
 
 let nombreA = document.getElementById("nombreA");
 let nombre = (nombreA.textContent = nbrMan);
@@ -37,7 +37,7 @@ let upE = document.getElementById("upE");
 let downE = document.getElementById("downE");
 let nombre2 = (nombreE.textContent = nbrChil);
 let div2 = `
-<div class="col-2 pastille d-flex pastChild mx-2" id="pastE" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Enfant</div>`;
+<div class="col-2 pastille d-flex pastChild mx-2" id="pastE" >Enfant</div>`;
 
 const addE = () => {
   nbrChil++;
@@ -100,7 +100,7 @@ upE.addEventListener("click", () => {
 downA.addEventListener("click", () => {
   if (nbrMan < 4) {
     upA.style.visibility = "visible";
-    downE.style.visibility = "visible";
+    upE.style.visibility = "visible";
   }
   if (nbrMan == 0) {
     downA.style.visibility = "hidden";

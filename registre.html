@@ -125,6 +125,7 @@
                     name="inlineRadioOptions"
                     id="inlineRadio1"
                     value="Madame"
+                    required
                   />
                   <label class="form-check-label" for="inlineRadio1">Mme</label>
                 </div>
@@ -135,6 +136,7 @@
                     name="inlineRadioOptions"
                     id="inlineRadio2"
                     value="Monsieur"
+                    required
                   />
                   <label class="form-check-label" for="inlineRadio2">Mr</label>
                 </div>
@@ -145,9 +147,11 @@
                 >
                 <input
                   type="text"
-                  class="form-check col-7 col-sm-8"
+                  class="form-check col-7"
                   id="lastname"
+                  aria-describedby="lastname"
                   value=""
+                  required
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
@@ -156,9 +160,11 @@
                 >
                 <input
                   type="text"
-                  class="form-check col-7 col-sm-8"
+                  class="form-check col-7"
                   id="firstname"
+                  aria-describedby="firstname"
                   value=""
+                  required
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
@@ -169,16 +175,28 @@
                 >
                 <input
                   type="email"
-                  class="form-check col-7 col-sm-8"
+                  class="form-check col-7"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   value=""
+                  required
                 />
               </div>
               <div class="mb-3 row px-3 formDonne">
-                <label for="exampleInputEmail1" class="form-label col"
-                  >Allergie</label
-                >
+                <label for="password" class="form-label col-5 col-sm-4"
+                  >MdP.
+                </label>
+                <input
+                  type="password"
+                  class="form-check col-7"
+                  id="password"
+                  aria-describedby="password"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="mb-3 row px-3 formDonne">
+                <label for="allergie" class="form-label col">Allergie</label>
                 <div
                   class="col"
                   data-bs-toggle="modal"
@@ -211,8 +229,14 @@
                   Adulte(s) et &nbsp;<span id="nombreE"></span>&nbsp; Enfant(s)
                 </p>
               </div>
-              <div class="d-flex justify-content-around btn">
-                <button type="submit" class="btn btnMod scale">Annuler</button>
+              <div class="d-flex justify-content-around btn pb-3">
+                <button
+                  type="submit"
+                  class="btn btnMod scale"
+                  aria-label="Close"
+                >
+                  Annuler
+                </button>
                 <button type="submit" class="btn btnConf scale">
                   Confirmer
                 </button>
