@@ -109,16 +109,542 @@
       </div>
     </header>
     <main>
-      <div class="presentation2 pb-4">
-        <div
-          class="cadre2 pb-4 px-4"
-          style="
-            width: 90%;
-            height: 80%;
-            background: #192537;
-            margin-top: 130px;
-          "
-        ></div>
+      <div class="presentation pb-4">
+        <div class="cadre cadre2 pb-4 px-4 navbar-nav-scroll">
+          <div class="row mt-3">
+            <div class="col-12 donneTitre">
+              <h4>Modification Administrateur</h4>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Modifier la carte
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <div class="accordion" id="accordionCarte">
+                      <div class="accordion-item">
+                        <h4 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseEntree"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseEntree"
+                          >
+                            Entrées
+                          </button>
+                        </h4>
+                        <div
+                          id="panelsStayOpen-collapseEntree"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body">
+                            <form action="">
+                              <section>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree1"
+                                    >Entrée 1</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="entreeT1"
+                                    value="Soupe de courge butternut"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeP1"
+                                    value="8 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="Des1"
+                                    id="entreeD1"
+                                    value="avec crème fraiche et croûtons"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree2"
+                                    >Entrée 2</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="entreeT2"
+                                    value="Salade de chèvre chaud"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeP2"
+                                    value="12 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeD2"
+                                    value="avec crème fraiche et croûtons"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree3"
+                                    >Entrée 3</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="entreeT3"
+                                    value="Quiche lorraine maison"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeP3"
+                                    value="10 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeD3"
+                                    value="avec crème fraiche et croûtons"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree4"
+                                    >Entrée 4</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="entreeT4"
+                                    value="Escargots de Bourgogne"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeP4"
+                                    value="10 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="entreeD4"
+                                    value="avec crème fraiche et croûtons"
+                                  />
+                                </div>
+                              </section>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h4 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsePlat"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsePlat"
+                          >
+                            Plats Principaux
+                          </button>
+                        </h4>
+                        <div
+                          id="panelsStayOpen-collapsePlat"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body">
+                            <form action="">
+                              <section>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree1"
+                                    >Plat 1</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="platT1"
+                                    value="Fondue savoyarde"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="platP1"
+                                    value="20 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="Des1"
+                                    id="platD1"
+                                    value="et ses pommes de terre vapeur"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="plats2"
+                                    >Plat 2</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="platT2"
+                                    value="Magret de canard rôti"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="platP2"
+                                    value="20 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="platD2"
+                                    value="avec sauce aux myrtilles et gratin dauphinois"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="plats3"
+                                    >Plat 3</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="platT3"
+                                    value="Filet de truite meunière"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="platP3"
+                                    value="18 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="platD3"
+                                    value="avec légumes de saison et pommes de terre sautées"
+                                  />
+                                </div>
+                                <div class="mb-1 row">
+                                  <label class="col-12" for="entree4"
+                                    >Plat 4</label
+                                  >
+                                  <input
+                                    class="col-10"
+                                    type="text"
+                                    name="soupe"
+                                    id="platT4"
+                                    value="Escalope de veau à la crème"
+                                  />
+                                  <input
+                                    class="col-2"
+                                    type="text"
+                                    name="prix1"
+                                    id="platP4"
+                                    value="22 €"
+                                  />
+                                  <input
+                                    class="col-12 mt-1"
+                                    type="text"
+                                    name="prix1"
+                                    id="platD4"
+                                    value="avec champignons et gratin dauphinois"
+                                  />
+                                </div>
+                              </section>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h4 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseAcc"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseAcc"
+                          >
+                            Accompagnements
+                          </button>
+                        </h4>
+                        <div
+                          id="panelsStayOpen-collapseAcc"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h4 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseDess"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseDess"
+                          >
+                            Desserts
+                          </button>
+                        </h4>
+                        <div
+                          id="panelsStayOpen-collapseDess"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Modifier le menu
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Modifier les photos
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour"
+                  >
+                    Modifier la horaires
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFour"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive"
+                  >
+                    Modifier les allergies
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFive"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <section>
+                      <form action="get">
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Céréales contenant du gluten"
+                          id="gluten"
+                        />
+
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base de crustacés"
+                          id="crustaces"
+                        />
+
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base d'oeufs"
+                          id="oeufs"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base d'arachides"
+                          id="arachides"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base de poissons"
+                          id="poisson"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base de soja"
+                          id="soja"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Produits à base de lait"
+                          id="lait"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Fruits à coques"
+                          id="fruitCoque"
+                        />
+                        <input
+                          class="form-control mb-1"
+                          type="text"
+                          value="Graines de sésame"
+                          id="sesame"
+                        />
+                        <input
+                          class="form-control"
+                          type="text"
+                          value=" Anyhdride sulfureux et sulfites"
+                          id="sulfite"
+                        />
+                      </form>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix"
+                  >
+                    Modifier les places assises
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSix"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <section class="row">
+                      <p class="col-10">Nombre de places assises max :</p>
+                      <input class="col" type="text" value="15" />
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>

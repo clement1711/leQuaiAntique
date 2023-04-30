@@ -20,7 +20,7 @@
   margin-top: 40px;
 }
 .datePage {
-  visibility: hidden;
+  visibility: visible;
 }
 .heurePage {
   visibility: hidden;
@@ -28,7 +28,7 @@
 }
 
 .personnePage {
-  visibility: visible;
+  visibility: hidden;
   background-color: #192537;
 }
 
