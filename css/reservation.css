@@ -294,6 +294,7 @@
   background-color: #192537;
 }
 
+#horaire,
 #placeE,
 #placeA,
 #nbrPlace {
@@ -315,4 +316,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#horaire {
+  width: 60px;
 }

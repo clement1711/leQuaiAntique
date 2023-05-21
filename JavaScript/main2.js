@@ -318,10 +318,7 @@ placeE.textContent = nbrChil;
 
 // Gestion des heures *******************************
 
-let horaire = document.getElementById("horaire");
-let matin1 = document.getElementsByClassName("matin1");
-
-function boxD(e) {
+function boxD() {
   personnePage.style.visibility = "visible";
   heurePage.style.visibility = "hidden";
   datePage.style.visibility = "hidden";
@@ -333,3 +330,11 @@ function boxD(e) {
   btnA.classList.remove("active");
   btnB.classList.remove("active");
 }
+
+let horaire = document.getElementById("horaire");
+let element = document.getElementById("matin");
+
+element.addEventListener("click", function (e) {
+  var initElem = e.target;
+  horaire.innerHTML = initElem.textContent;
+});
